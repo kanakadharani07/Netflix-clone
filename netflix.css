@@ -1,0 +1,243 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #000;
+    color: #fff;
+}
+.header{
+    width:100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 0;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+nav button{
+    border:0;
+    outline:0;
+    background-color: #db0001;
+    color:#fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    font-size: 13px;
+}
+.lang-button{
+    background-color: transparent;
+    display:inline-flex;
+    align-items: center;
+    border: 1px solid #fff;
+    padding:7px 10px;
+}
+.lang-button img{
+    width: 12px;
+    margin-left: 7px;
+}
+.header-content{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 100px;
+    transform: translate(-50%, -50%);
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;    
+}
+.header-content h3{
+    font-weight: 400px;
+    margin-bottom: 20px;
+}
+.email-input{
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.email-input input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+.email-input button{
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width:100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+    
+.img-col img{
+    display: block;
+    width:90%;
+    margin: 0 auto;
+} 
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* FAQ Section Container */
+.faq {
+  max-width: 700px;
+  margin: 40px auto;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.faq h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Accordion List */
+.accordion {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each FAQ item */
+.accordion li {
+  background: #2c2c2c;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hide input radio buttons */
+.accordion input[type="radio"] {
+  display: none;
+}
+
+/* Question Label */
+.accordion label {
+  display: block;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+/* Add plus icon */
+.accordion label::after {
+  content: '+';
+  position: absolute;
+  right: 20px;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+/* Content box (answer) */
+.accordion .content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  background: #1e1e1e;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: max-height 0.1s ease;
+}
+
+/* Show content when input is checked */
+.accordion input:checked ~ .content {
+  max-height: 500px;
+  padding: 15px 20px;
+}
+
+/* Change plus to minus when active */
+.accordion input:checked + label::after {
+  content: '-';
+  transform: rotate(180deg);
+}
+.footer{
+    background-color: #141414;
+    padding: 50px 12%;
+    list-style-type: none;
+    flex-grow: 1;
+    flex-basis: 20%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color:#777;
+    font-size: 14px;
+    background-color: #000;
+    
+}
+.footer a {
+    color: #777;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    background-color: #000;
+}
+.footer ul li{
+    list-style-type: none;
+}
+.footer p{
+    margin-bottom: 10px;
+
+}
+.footer :hover{
+    color: #fff;
+}
+
+hr{
+    margin-top: 50px;
+}
+small{
+    text-align: center;
+    margin: 130px;
+    text-decoration: none;
+    color: white;
+}
